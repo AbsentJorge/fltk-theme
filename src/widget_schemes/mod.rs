@@ -10,5 +10,6 @@ pub(crate) mod crystal;
 pub(crate) mod fleet;
 pub mod fluent;
 pub(crate) mod gleam;
+pub(crate) mod jewel;
 pub(crate) mod svg_based;
 pub mod sweet;

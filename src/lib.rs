@@ -141,6 +141,8 @@ pub enum SchemeType {
     Fluent,
     /// Taken from the NTK fork, a modification of the FLTK Gleam scheme
     Gleam,
+    /// Based on Fluent & Fleet 1, colorful sharp edges
+    Jewel,
     /**
     Draws the following FrameTypes using scalable vector graphics:
     - RoundedFrame
@@ -179,6 +181,7 @@ impl WidgetScheme {
             SchemeType::Crystal => widget_schemes::crystal::use_crystal_scheme(),
             SchemeType::Fluent => widget_schemes::fluent::use_fluent_scheme(),
             SchemeType::Gleam => widget_schemes::gleam::use_gleam_scheme(),
+            SchemeType::Jewel => widget_schemes::jewel::use_jewel_scheme(),
             SchemeType::SvgBased => widget_schemes::svg_based::use_svg_based_scheme(),
             SchemeType::Sweet => widget_schemes::sweet::use_sweet_scheme(),
             SchemeType::Fleet1 => widget_schemes::fleet::use_fleet_scheme1(),
