@@ -33,10 +33,10 @@ const FLEET_THEMES: &[&[ColorMap]] = &[
 fn main() {
     let a = app::App::default();
     app::set_visible_focus(false);
-    let color_theme = ColorTheme::new(&color_themes::fleet::LIGHT);
+    let color_theme = ColorTheme::new(&color_themes::fleet::DARK2);
     color_theme.apply();
     // Optional Fleet scheme as well
-    let scheme = WidgetScheme::new(SchemeType::Fleet1);
+    let scheme = WidgetScheme::new(SchemeType::Fleet2);
     scheme.apply();
     let mut win = window::Window::default()
         .with_size(400, 300)
