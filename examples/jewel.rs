@@ -1,5 +1,3 @@
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] // No console on release
-
 use fltk::{
     button::Button,
     enums::{Color, Event},
@@ -60,7 +58,6 @@ fn main() {
     round.set_value(true);
 
     let mut reset = create_btn("Reset Colors");
-    // create_btn("Click!");
 
     col.end();
     win.end();
