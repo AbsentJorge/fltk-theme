@@ -80,62 +80,56 @@ fn scheme2_down_box_draw(x: i32, y: i32, w: i32, h: i32, c: Color) {
 
 fn scheme2_up_frame_draw(x: i32, y: i32, w: i32, h: i32, c: Color) {
     set_draw_color(c.darker());
-    draw_xyline2(x + 2, y, x + w - 3, y);
-    draw_xyline2(x + 2, y + h - 1, x + w - 3, y + h - 1);
+    draw_line(x + 2, y, x + w - 3, y);
+    draw_line(x + 2, y + h - 1, x + w - 3, y + h - 1);
     draw_point(x + 1, y + 1);
     draw_point(x + 1, y + h - 2);
     draw_point(x + w - 2, y + 1);
     draw_point(x + w - 2, y + h - 2);
-    draw_xyline2(x, y + 2, x, y + h - 3);
-    draw_xyline2(x + w - 1, y + 2, x + w - 1, y + h - 3);
+    draw_line(x, y + 2, x, y + h - 3);
+    draw_line(x + w - 1, y + 2, x + w - 1, y + h - 3);
 
     set_draw_color(Color::color_average(c, c.lighter(), 0.25));
-    draw_xyline2(x + 2, y + 1, x + w - 3, y + 1);
-    draw_xyline2(x + 2, y + h - 2, x + w - 3, y + h - 2);
+    draw_line(x + 2, y + 1, x + w - 3, y + 1);
+    draw_line(x + 2, y + h - 2, x + w - 3, y + h - 2);
 
     set_draw_color(Color::color_average(c, c.lighter(), 0.45));
-    draw_xyline2(x + 1, y + 2, x + w - 2, y + 2);
-    draw_xyline2(x + 1, y + h - 3, x + w - 2, y + h - 3);
+    draw_line(x + 1, y + 2, x + w - 2, y + 2);
+    draw_line(x + 1, y + h - 3, x + w - 2, y + h - 3);
 
     set_draw_color(Color::color_average(c, c.lighter(), 0.65));
-    draw_xyline2(x + 1, y + 3, x + w - 2, y + 3);
-    draw_xyline2(x + 1, y + h - 4, x + w - 2, y + h - 4);
+    draw_line(x + 1, y + 3, x + w - 2, y + 3);
+    draw_line(x + 1, y + h - 4, x + w - 2, y + h - 4);
 
     set_draw_color(Color::color_average(c, c.lighter(), 0.85));
-    draw_xyline2(x + 1, y + 4, x + w - 2, y + 4);
-    draw_xyline2(x + 1, y + h - 5, x + w - 2, y + h - 5);
-    draw_xyline2(x + 1, y + 5, x + 1, y + h - 6);
-    draw_xyline2(x + w - 2, y + 5, x + w - 2, y + h - 6);
+    draw_rect(x + 1, y + 4, w - 2, h - 8);
 }
 
 fn scheme2_down_frame_draw(x: i32, y: i32, w: i32, h: i32, c: Color) {
     set_draw_color(c.darker());
-    draw_xyline2(x + 2, y, x + w - 3, y);
-    draw_xyline2(x + 2, y + h - 1, x + w - 3, y + h - 1);
+    draw_line(x + 2, y, x + w - 3, y);
+    draw_line(x + 2, y + h - 1, x + w - 3, y + h - 1);
     draw_point(x + 1, y + 1);
     draw_point(x + 1, y + h - 2);
     draw_point(x + w - 2, y + 1);
     draw_point(x + w - 2, y + h - 2);
-    draw_xyline2(x, y + 2, x, y + h - 3);
-    draw_xyline2(x + w - 1, y + 2, x + w - 1, y + h - 3);
+    draw_line(x, y + 2, x, y + h - 3);
+    draw_line(x + w - 1, y + 2, x + w - 1, y + h - 3);
 
     set_draw_color(Color::color_average(c, c.darker(), 0.25));
-    draw_xyline2(x + 2, y + 1, x + w - 3, y + 1);
-    draw_xyline2(x + 2, y + h - 2, x + w - 3, y + h - 2);
+    draw_line(x + 2, y + 1, x + w - 3, y + 1);
+    draw_line(x + 2, y + h - 2, x + w - 3, y + h - 2);
 
     set_draw_color(Color::color_average(c, c.darker(), 0.45));
-    draw_xyline2(x + 1, y + 2, x + w - 2, y + 2);
-    draw_xyline2(x + 1, y + h - 3, x + w - 2, y + h - 3);
+    draw_line(x + 1, y + 2, x + w - 2, y + 2);
+    draw_line(x + 1, y + h - 3, x + w - 2, y + h - 3);
 
     set_draw_color(Color::color_average(c, c.darker(), 0.65));
-    draw_xyline2(x + 1, y + 3, x + w - 2, y + 3);
-    draw_xyline2(x + 1, y + h - 4, x + w - 2, y + h - 4);
+    draw_line(x + 1, y + 3, x + w - 2, y + 3);
+    draw_line(x + 1, y + h - 4, x + w - 2, y + h - 4);
 
     set_draw_color(Color::color_average(c, c.darker(), 0.85));
-    draw_xyline2(x + 1, y + 4, x + w - 2, y + 4);
-    draw_xyline2(x + 1, y + h - 5, x + w - 2, y + h - 5);
-    draw_xyline2(x + 1, y + 5, x + 1, y + h - 6);
-    draw_xyline2(x + w - 2, y + 5, x + w - 2, y + h - 6);
+    draw_rect(x + 1, y + 4, w - 2, h - 8);
 }
 
 fn scheme2_thin_up_box_draw(x: i32, y: i32, w: i32, h: i32, c: Color) {
@@ -150,46 +144,41 @@ fn scheme2_thin_down_box_draw(x: i32, y: i32, w: i32, h: i32, c: Color) {
 
 fn scheme2_thin_up_frame_draw(x: i32, y: i32, w: i32, h: i32, c: Color) {
     set_draw_color(Color::color_average(c, c.darker(), 0.45));
-    draw_xyline2(x + 2, y, x + w - 3, y);
-    draw_xyline2(x + 2, y + h - 1, x + w - 3, y + h - 1);
+    draw_line(x + 2, y, x + w - 3, y);
+    draw_line(x + 2, y + h - 1, x + w - 3, y + h - 1);
     draw_point(x + 1, y + 1);
     draw_point(x + 1, y + h - 2);
     draw_point(x + w - 2, y + 1);
     draw_point(x + w - 2, y + h - 2);
-    draw_xyline2(x, y + 2, x, y + h - 3);
-    draw_xyline2(x + w - 1, y + 2, x + w - 1, y + h - 3);
+    draw_line(x, y + 2, x, y + h - 3);
+    draw_line(x + w - 1, y + 2, x + w - 1, y + h - 3);
 
     set_draw_color(Color::color_average(c, c.lighter(), 0.65));
-    draw_xyline2(x + 2, y + 1, x + w - 3, y + 1);
-    draw_xyline2(x + 2, y + h - 2, x + w - 3, y + h - 2);
+    draw_line(x + 2, y + 1, x + w - 3, y + 1);
+    draw_line(x + 2, y + h - 2, x + w - 3, y + h - 2);
 
     set_draw_color(Color::color_average(c, c.lighter(), 0.85));
-    draw_xyline2(x + 1, y + 2, x + w - 2, y + 2);
-    draw_xyline2(x + 1, y + h - 3, x + w - 2, y + h - 3);
-    draw_xyline2(x + 1, y + 3, x + 1, y + h - 3);
-    draw_xyline2(x + w - 2, y + 3, x + w - 2, y + h - 3);
+    draw_rect(x + 1, y + 2, w - 2, h - 4);
 }
 
 fn scheme2_thin_down_frame_draw(x: i32, y: i32, w: i32, h: i32, c: Color) {
     set_draw_color(Color::color_average(c, c.darker(), 0.45));
-    draw_xyline2(x + 2, y, x + w - 3, y);
-    draw_xyline2(x + 2, y + h - 1, x + w - 3, y + h - 1);
+    draw_line(x + 2, y, x + w - 3, y);
+    draw_line(x + 2, y + h - 1, x + w - 3, y + h - 1);
     draw_point(x + 1, y + 1);
     draw_point(x + 1, y + h - 2);
     draw_point(x + w - 2, y + 1);
     draw_point(x + w - 2, y + h - 2);
-    draw_xyline2(x, y + 2, x, y + h - 3);
-    draw_xyline2(x + w - 1, y + 2, x + w - 1, y + h - 3);
+    draw_line(x, y + 2, x, y + h - 3);
+    draw_line(x + w - 1, y + 2, x + w - 1, y + h - 3);
 
     set_draw_color(Color::color_average(c, c.darker(), 0.65));
-    draw_xyline2(x + 2, y + 1, x + w - 3, y + 1);
-    draw_xyline2(x + 2, y + h - 2, x + w - 3, y + h - 2);
+    draw_line(x + 2, y + 1, x + w - 3, y + 1);
+    draw_line(x + 2, y + h - 2, x + w - 3, y + h - 2);
 
     set_draw_color(Color::color_average(c, c.darker(), 0.85));
-    draw_xyline2(x + 1, y + 2, x + w - 2, y + 2);
-    draw_xyline2(x + 1, y + h - 3, x + w - 2, y + h - 3);
-    draw_xyline2(x + 1, y + 3, x + 1, y + h - 3);
-    draw_xyline2(x + w - 2, y + 3, x + w - 2, y + h - 3);
+    set_draw_color(Color::from_rgb(0, 255, 0));
+    draw_rect(x + 1, y + 2, w - 2, h - 4);
 }
 
 pub(crate) fn use_fleet_scheme1() {
