@@ -210,6 +210,10 @@ These provide schemes for widgets without color theming. Currently there are 7 s
 - Fleet1: A 3D scheme designed for good looks in both dark and light colors.
 - Fleet2: A gradient scheme designed for good looks in both dark and light colors.
 
+- Jewel: A scheme based Fluent & Fleet1 with sharp and colorful edges.
+- ![alt_test](screenshots/jewel_dark.png)
+- ![alt_test](screenshots/jewel_light.png)
+
 ## Colors
 
 The crate also provides colors, namely html colors and aqua colors.
